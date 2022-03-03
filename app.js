@@ -8,7 +8,7 @@ function onLoginSubmit(event) {
     event.preventDefault();
     loginForm.classList.add(HIDDEN_CLASSNAME);
     const username = loginInput.value;
-    greeting.innerText = "반갑습니다." + username;
+    greeting.innerText = `반갑습니다. ${username}님 오늘 하루는 어떠셨나요?`;
     greeting.classList.remove(HIDDEN_CLASSNAME)
 }
 loginForm.addEventListener("submit", onLoginSubmit);
